@@ -3,7 +3,8 @@
 **MoodPalette** is a personalized color therapy web app powered by AI!  
 Enter how you're feeling, and the app detects your mood, shows a matching color palette, and gives you a motivational quote 💬💖
 
-![App Banner]([https://i.imgur.com/YOUR_IMAGE_LINK.png](https://www.google.com/search?newwindow=1&sca_esv=dde00597a35db47c&rlz=1C1CHBF_en-GBSA1091SA1091&sxsrf=AE3TifNnrbgqDqKK_i216oDNdhUpqpS-DA:1750149141534&q=color+therapist&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIemkjk18Cn72Gp24fGkjjh6xc8y8oU3IJovU34XDyOFvEl9PQhCX-bXyx8AzQGU_JUmd7tO0Sp0t0qHqXwx4ZXWZ46FMJ_5qOlBWL317zdnko09c3cS91eOWyqKC8pqNi-T4DhtjV8zWXL8UGIxO7yEoZ63L3KD6mXO4QEFSbHyfGyMpJqQ&sa=X&ved=2ahUKEwjX9YnPhfiNAxU9TWwGHSgCEFsQtKgLegQIFhAB&biw=1536&bih=730&dpr=1.25#vhid=C677rnL-c-bwGM&vssid=mosaic))  
+![App Banner](![image](https://github.com/user-attachments/assets/4f999975-addb-4c04-98c2-f71c30acfadc)
+)
 
 ---
 
@@ -29,6 +30,19 @@ Enter how you're feeling, and the app detects your mood, shows a matching color 
 ## 🚀 How to Run Locally
 
 ### 1. Clone the repo
-```bash
+
 git clone https://github.com/your-username/moodpalette-app.git
 cd moodpalette-app
+
+### 2. Install dependencies
+
+pip install -r requirements.txt
+
+### 3. Run the app
+
+streamlit run app.py
+#### Make sure Ollama is installed and the gemma3 model is pulled using:
+ollama run gemma3
+
+## 👩‍💻 Created By
+Ayesha Mafrah – Researcher, AI & NLP Enthusiast
