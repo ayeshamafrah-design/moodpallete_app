@@ -5,16 +5,15 @@ from langchain_core.output_parsers import StrOutputParser
 import matplotlib.pyplot as plt
 import os
 from dotenv import load_dotenv
-import re  # ✅ NEW: to extract the mood keyword safely
+import re  
 
 load_dotenv()
 
-# Langsmith tracking (optional)
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
 
-# Predefined color palette for moods
+# color palette for moods
 mood_colors = {
     "happy": ["#FFF700", "#FFB300", "#FFD700"],
     "sad": ["#4A90E2", "#357ABD", "#203864"],
@@ -45,7 +44,6 @@ if input_text:
         raw_response = chain.invoke({"feeling": input_text})
         mood_key = raw_response.strip().lower()
 
-        # ✅ Extract just the known mood
         mood_key = re.findall(r'\b(happy|sad|angry|calm|anxious|excited|bored)\b', mood_key)
         mood_key = mood_key[0] if mood_key else None
 
@@ -53,7 +51,6 @@ if input_text:
             st.markdown(f"### 🧭 Detected Mood: **{mood_key.capitalize()}**")
             colors = mood_colors[mood_key]
 
-            # Show color blocks
             st.markdown("### 🎨 Color Palette")
             fig, ax = plt.subplots(figsize=(5, 1))
             for i, color in enumerate(colors):
