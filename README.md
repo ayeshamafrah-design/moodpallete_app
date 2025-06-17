@@ -32,7 +32,8 @@ Enter how you're feeling, and the app detects your mood, shows a matching color 
 
 ### 1. Clone the repo
 
-git clone https://github.com/your-username/moodpalette-app.git
+git clone https://github.com/ayeshamafrah-design/moodpalette_app.git
+
 cd moodpalette-app
 
 ### 2. Install dependencies
