@@ -3,7 +3,8 @@
 **MoodPalette** is a personalized color therapy web app powered by AI!  
 Enter how you're feeling, and the app detects your mood, shows a matching color palette, and gives you a motivational quote 💬💖
 
-![App Banner]([![color-therapy](https://github.com/user-attachments/assets/b2891769-9824-4d81-a53d-1c6a6a1f0c89)](https://github.com/ayeshamafrah-design/moodpallete_app/blob/main/Image.png))
+![App Banner](![App Banner](https://github.com/ayeshamafrah-design/moodpallete_app/blob/main/Image.png)
+)
 
 
 ---
